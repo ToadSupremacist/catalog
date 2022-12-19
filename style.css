@@ -4,6 +4,25 @@ body {
     flex-direction: column;
 }
 
+@media (orientation: landscape) {
+    .card {
+        max-width: 600px;
+        max-height: 200px;
+    }
+    .name {
+        font-size: 25px;
+    }
+    .address, .work-hours {
+        font-size: 25px;
+    }
+    .searchbar {
+        max-width: 550px;
+    }
+    .search-btn {
+        max-width: 75px;
+    }
+}
+
 @keyframes moveacross {
     from {
         background-position-x: right;
@@ -31,7 +50,7 @@ body {
     background-repeat: no-repeat;
     background-size: 200%;
     animation-name: moveacross;
-    animation-duration: 15s;
+    animation-duration: 45s;
     animation-iteration-count: 1;
 }
 .header--thin {
