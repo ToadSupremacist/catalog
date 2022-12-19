@@ -1,5 +1,5 @@
 const header = document.querySelector(".header")
 
-window.addEventListener("click", (event) => {
-    header.toggleAttribute("class", "header--thin")
+window.addEventListener("scroll", (event) => {
+    header.classList.add("header--thin")
 })
