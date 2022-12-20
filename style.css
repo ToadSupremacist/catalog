@@ -60,7 +60,7 @@ body {
 
 /*  */
 .header {
-    min-height: 15vh;
+    min-height: 16vh;
     max-height: 40vh;
     background-image: url(static/doma-doubled.svg);
     background-color: #fdc78a;
@@ -112,11 +112,11 @@ body {
     font-size: 35px;
     font-family: 'Trebuchet MS';
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 .searchbar::placeholder {
     color: #9d9d9d;
     font-size: 20px;
-    margin-bottom: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
 }
 .search-btn {
@@ -133,20 +133,21 @@ body {
 .categories-div {
     display: grid;
     margin: 10px auto;
-    gap: 20px;
+    gap: 10px;
     width: 500px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 .category {
-    height: 30px;
-    /* min-width: 100px; */
-    min-width: fit-content;
+    text-align: center;
+    height: 25px;
+    min-width: 100px;
+    width: fit-content;
     border-radius: 15px;
     background-color: #fdc78a;
     color: #2e2e2e;
     font-size: 20px;
-    padding: 0px 6px;
+    padding: 6px 6px 0 6px;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
 }
@@ -173,11 +174,12 @@ body {
     margin-bottom: 30px;
 }
 
-.card{
+.card {
     display: flex;
     margin: auto;
     background-color: #e4e4e4;
     border-radius: 40px;
+    cursor: pointer;
 }
 
 .card div {
