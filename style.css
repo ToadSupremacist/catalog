@@ -1,10 +1,28 @@
 @media (orientation: portrait) {
     .header {
+        min-height: 10vh;
         max-height: 40vh;
+    }
+    .categories-div {
+        gap: 25px !important;
+    }
+    .category {
+        text-align: center;
+        min-height: 50px;
+        max-height: 50px;
+        min-width: 100px;
+        max-width: fit-content;
+        border-radius: 50px !important;
+        font-size: 40px !important;
+    }
+    .popular {
+        font-size: 35px !important;
     }
     .card {
         align-items: center;
-        min-width: 90vw;
+        max-width: 90vw;
+        min-width: 80vw;
+        max-height: 20vh;
         min-height: 15vh;
     }
     .name {
@@ -24,8 +42,11 @@
         min-width: 150px;
         min-height: 100px;
     }
-    .mail__ul {
-        height: 100%;
+    .main__ul {
+        min-height: 50vh;
+        max-height: 60vh;
+        min-width: min-content;
+        max-width: max-content;
     }
     .header--thin {
         animation-name: slideup;
@@ -70,6 +91,7 @@ body {
     animation-name: moveacross;
     animation-duration: 50s;
     animation-iteration-count: 1;
+    padding-top: 20px;
 }
 
 /*  */
@@ -94,7 +116,6 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    width: 700px;
     margin: auto;
 }
 
@@ -132,22 +153,21 @@ body {
 }
 .categories-div {
     display: grid;
-    margin: 10px auto;
+    grid-auto-flow: column;
+    margin: 10px 0;
     gap: 10px;
-    width: 500px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: fit-content;
+    grid-template-columns: repeat(4 fit-content);
     grid-template-rows: 1fr 1fr 1fr;
 }
 .category {
-    text-align: center;
-    height: 25px;
-    min-width: 100px;
+    height: fit-content;
     width: fit-content;
     border-radius: 15px;
     background-color: #fdc78a;
     color: #2e2e2e;
     font-size: 20px;
-    padding: 6px 6px 0 6px;
+    padding: 6px;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
 }
@@ -168,6 +188,7 @@ body {
 
 .main__ul::-webkit-scrollbar {
     background-color: transparent;
+    width: 0;
 }
 
 .main__ul li {
