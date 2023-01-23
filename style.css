@@ -54,7 +54,11 @@
         height: 40vh;
     }
     to {
-        height: 12vh;
+        height: 10vh;
+        background-image: url(static/doma.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        padding-top: 20px;
     }
 }
 
@@ -63,22 +67,26 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 /*  */
 .header {
-    min-height: 16vh;
-    max-height: 40vh;
-    background-image: url(static/doma-doubled.svg);
-    background-color: #fdc78a;
-    background-position: bottom right;
+    height: 12vh;
+    background-image: url(static/doma.svg); /*change to doubled for animation*/
+    background-color: rgb(255, 168, 125);
+    background-position: bottom; /*bottom right for anim*/
     background-repeat: no-repeat;
-    background-size: 200%;
-    animation-name: moveacross;
+    background-size: contain; /*200% for anim*/
+    /* animation-name: moveacross;
     animation-duration: 50s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; */
     padding-top: 20px;
 }
-
+/* .header--thin {
+    height: 12vh;
+    background-image: url(static/doma.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+} */
 /*  */
 .catalog-name {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
@@ -127,7 +135,7 @@ body {
 .search-btn {
     height: 50px;
     width: 80px;
-    background-color: #fdc78a;
+    background-color: rgb(255, 168, 125);
     color: #cf8025;
     font-size: 20px;
     border: none;
@@ -148,7 +156,7 @@ body {
     height: fit-content;
     width: fit-content;
     border-radius: 15px;
-    background-color: #fdc78a;
+    background-color: rgb(255, 168, 125);
     color: #2e2e2e;
     font-size: 20px;
     padding: 6px;
@@ -173,25 +181,25 @@ body {
     background-color: transparent;
     width: 0;
 }
-
-.main__ul li {
-    margin-bottom: 30px;
-}
-
-.card {
+.card a {
     display: flex;
     background-color: #e4e4e4;
     border-radius: 40px;
-    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 30px;
 }
-
 .card div {
     display: flex;
     flex-direction: column;
     height: 150px;
     /* width: 500px; */
 }
-
+.card-photo {
+    display: inline;
+    max-width: 100px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 .address, .work-hours {
     color: #2e2e2e;
     margin: auto 0;
@@ -201,7 +209,7 @@ body {
 }
 .name {
     color: #2e2e2e;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
     margin: 10px 0 0 10px;
     font-family: 'Trebuchet MS';
@@ -210,15 +218,46 @@ body {
     width: 20px;
     margin-right: 10px;
 }
-
 .call-btn {
     height: 50px;
     width: 50px;
-    margin: auto 50px auto 0;
+    margin: auto 0 auto 50px;
     background-color: transparent;
     border: none;
     background-image: url(static/call.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+}
+
+/* styles for project page */
+
+.page-header {
+    min-height: 12vh;
+    background-image: url(static/doma.svg);
+    background-color: rgb(255, 168, 125);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 20px;
+}
+.return-btn {
+    border-radius: 30px;
+    border-style: none;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 168, 125);
+    color: #9b5709;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.project-section {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    background-color: #e4e4e4;
+    padding: 10px;
+}
+.project-photo {
+    width: 300px;
 }
