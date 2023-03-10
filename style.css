@@ -63,6 +63,7 @@
 }
 
 body {
+    height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -119,7 +120,7 @@ body {
 .searchbar {
     width: 500px;
     height: 50px;
-    background-color: #e4e4e4;
+    background-color: #efefef;
     border: none;
     border-radius: 50px;
     font-size: 35px;
@@ -149,7 +150,6 @@ body {
     margin: 10px 0;
     gap: 10px;
     width: fit-content;
-    grid-template-columns: repeat(4 fit-content);
     grid-template-rows: 1fr 1fr 1fr;
 }
 .category {
@@ -158,7 +158,7 @@ body {
     border-radius: 15px;
     background-color: rgb(255, 168, 125);
     color: #2e2e2e;
-    font-size: 20px;
+    font-size: 16px;
     padding: 6px;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
@@ -170,7 +170,7 @@ body {
 .main__ul {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 800px;
     list-style: none;
     padding: 0;
     margin-block-start: 0;
@@ -183,35 +183,35 @@ body {
 }
 .card a {
     display: flex;
-    background-color: #e4e4e4;
+    background-color: #efefef;
     border-radius: 40px;
     padding: 10px;
     margin-bottom: 30px;
+    text-decoration: none;
 }
 .card div {
     display: flex;
     flex-direction: column;
     height: 150px;
-    /* width: 500px; */
 }
 .card-photo {
     display: inline;
     max-width: 100px;
     margin-top: auto;
+    margin-right: 30px;
     margin-bottom: auto;
 }
 .address, .work-hours {
     color: #2e2e2e;
     margin: auto 0;
     font-size: 20px;
-    padding-left: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
 }
 .name {
     color: #2e2e2e;
     font-size: 24px;
     font-weight: 700;
-    margin: 10px 0 0 10px;
+    margin: 0;
     font-family: 'Trebuchet MS';
 }
 .address img, .work-hours img {
@@ -242,21 +242,34 @@ body {
     padding-top: 20px;
 }
 .return-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 30px;
     border-style: none;
     width: 100px;
     height: 30px;
     background-color: rgb(255, 168, 125);
-    color: #9b5709;
+    color: #cf8025;
     margin-bottom: 10px;
     cursor: pointer;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 .project-section {
     display: flex;
     flex-direction: column;
     width: 40vw;
-    background-color: #e4e4e4;
-    padding: 10px;
+    background-color: #efefef;
+    padding: 15px;
+    min-height: 70vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.project-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .project-photo {
     width: 300px;
